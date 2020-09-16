@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAH Clone</title>
+</head>
+<body>
+  <h1>CAH Clone</h1>
+
+  <div id="nameDiv">
+    <input type="text" id="nameInput" placeholder="Name" required="true">
+    <div>
+      <button id="hostBtn">Host game</button>
+      <button id="joinBtn">Join game</button>
+    </div>
+  </div>
+
+  <div id="joinInput" style="display:none;">
+    <label for="idInput">Enter game id:</label>
+    <input type="text" id="idInput">
+    <button type="submit" id="idSubmit">Submit</button>
+  </div>
+
+  <div id="hostDisplay" style="display:none;">
+    <p id="roomDisplay">Room generated, ID: </p>
+    <button id="startGameBtn">Start game</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
